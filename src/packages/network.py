@@ -70,12 +70,3 @@ def show_connections():
             file.write(f"{str(datetime.datetime.now()).replace(' ', '-')}|{proto}|MY_IP|{raddr}|{conn.status}\n")
 
         geolocate_ip(raddr.split(':')[0])
-
-
-if __name__ == "__main__":
-    print("--------------------------------------------------------------------------")
-    print(f"[+] Public IP Address: {get_public_ip()}")
-    print(f"[+] Local IP Address: {get_local_ip()}")
-
-    show_connections()
-    print("--------------------------------------------------------------------------")

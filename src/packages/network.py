@@ -4,12 +4,12 @@ import smtplib
 import psutil
 import datetime
 
-def get_local_ip():
+def get_local_ip() -> str:
     hostname = socket.gethostname()
     local_ip = socket.gethostbyname(hostname)
     return local_ip
 
-def get_public_ip():
+def get_public_ip() -> str:
     try:
         response = requests.get("https://api.ipify.org")
         return response.text

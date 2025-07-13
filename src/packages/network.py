@@ -63,7 +63,7 @@ def show_connections():
         seen_connections.add(key)
 
         if get_local_ip() in laddr:
-            print(f"> {proto:>5}  {"lip.lip.lip.lip":<22}  {raddr:<22}  {conn.status}")
+            print(f"> {proto:>5}  {"your-local-ip-adress":<22}  {raddr:<22}  {conn.status}")
         else:
             print(f"> {proto:>5}  {laddr:<22}  {raddr:<22}  {conn.status}")
         with open("data.txt", "a") as file:

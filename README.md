@@ -29,3 +29,6 @@ if __name__ == "__main__":
     network.show_connections()
 
 ```
+``` bash
+python -m PyInstaller --onefile src/main.py
+```
